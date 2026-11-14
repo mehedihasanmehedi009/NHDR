@@ -28,12 +28,13 @@
 
 <div class="collapse navbar-collapse" id="menu">
 <ul class="navbar-nav ms-auto gap-lg-3">
-<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-<li class="nav-item"><a class="nav-link" href="#history">History</a></li>
-<li class="nav-item"><a class="nav-link" href="#documents">Documents</a></li>
-<li class="nav-item"><a class="nav-link" href="#interviews">Interviews</a></li>
-<li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="./document.html">Documents</a></li>
+<li class="nav-item"><a class="nav-link" href="./interviews.html">Interviews</a></li>
+<li class="nav-item"><a class="nav-link" href="./Gallry.html">Gallery</a></li>
+<li class="nav-item"><a class="nav-link" href="./contact.html">Contact </a></li>
+
+
 </ul>
 
 <a href="#documents" class="btn btn-danger ms-lg-3 mt-3 mt-lg-0">
@@ -44,48 +45,251 @@ Explore Archive
 </nav>
 
 
-<!-- HERO / LANDING PAGE -->
-<section class="text-white"
-style="background:linear-gradient(90deg,rgba(0,0,0,.90),rgba(0,0,0,.35)),url('https://commons.wikimedia.org/wiki/Special:FilePath/Bangabandhu_Sheikh_Mujibur_Rahman_delivering_March_7th_speech_at_Ramna_Racecourse_Maidan_Dhaka_East_Pakistan_1971-03-07_(PID-h0046).jpg') center 30%/cover;">
+ 
+<!-- ================= HERO IMAGE SLIDER ================= -->
 
-<div class="container py-5">
-<div class="row align-items-center" style="min-height:550px">
+<section id="heroSlider">
 
-<div class="col-lg-8 py-5">
+    <div id="historyCarousel"
+         class="carousel slide carousel-fade"
+         data-bs-ride="carousel"
+         data-bs-interval="5000">
 
-<span class="badge bg-danger px-3 py-2 mb-4">
-BANGLADESH LIBERATION WAR 1971
-</span>
+        <!-- Indicators -->
+        <div class="carousel-indicators">
 
-<h1 class="display-2 fw-bold mb-4">
-The History Of Our
-<span class="text-danger">Freedom</span>
-</h1>
+            <button type="button"
+                data-bs-target="#historyCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1">
+            </button>
 
-<p class="lead text-white mb-4">
-Remember the historic struggle of 1971.
-Explore the speeches, historical documents,
-freedom fighters' stories and photographs
-that tell the story of Bangladesh's independence.
-</p>
+            <button type="button"
+                data-bs-target="#historyCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2">
+            </button>
 
-<a href="#about" class="btn btn-danger btn-lg px-4 me-2">
-Discover History <i class="bi bi-arrow-right"></i>
-</a>
+            <button type="button"
+                data-bs-target="#historyCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3">
+            </button>
 
-<a href="#documents" class="btn btn-outline-light btn-lg px-4">
-Explore Archive
-</a>
+        </div>
 
-<p class="small text-white-50 mt-4">
-Historical moment: Bangabandhu's 7 March 1971 speech,
-Ramna Racecourse, Dhaka.
-</p>
 
-</div>
-</div>
-</div>
+        <!-- Slider Items -->
+        <div class="carousel-inner">
+
+
+            <!-- SLIDE 1: 7 MARCH SPEECH -->
+
+            <div class="carousel-item active">
+
+                <div class="text-white"
+                    style="
+                    background:linear-gradient(90deg,rgba(0,0,0,.90),rgba(0,0,0,.30)),
+                    url('https://commons.wikimedia.org/wiki/Special:FilePath/Bangabandhu_Sheikh_Mujibur_Rahman_delivering_March_7th_speech_at_Ramna_Racecourse_Maidan_Dhaka_East_Pakistan_1971-03-07_%28PID-h0046%29.jpg') center 30%/cover;
+                    min-height:600px;
+                    ">
+
+                    <div class="container">
+                        <div class="row align-items-center" style="min-height:600px">
+
+                            <div class="col-lg-8 py-5">
+
+                                <span class="badge bg-danger px-3 py-2 mb-4">
+                                    BANGLADESH LIBERATION WAR 1971
+                                </span>
+
+                                <h1 class="display-2 fw-bold mb-4">
+                                    The History Of Our
+                                    <span class="text-danger">Freedom</span>
+                                </h1>
+
+                                <p class="lead text-white mb-4">
+                                    Remember the historic struggle of 1971.
+                                    Explore the speeches, historical documents,
+                                    freedom fighters' stories and photographs
+                                    that tell the story of Bangladesh's independence.
+                                </p>
+
+                                <a href="#about" class="btn btn-danger btn-lg px-4 me-2">
+                                    Discover History
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+
+                                <a href="#documents" class="btn btn-outline-light btn-lg px-4">
+                                    Explore Archive
+                                </a>
+
+                                <p class="small text-white-50 mt-4">
+                                    Historical Moment: 7 March 1971 Speech,
+                                    Ramna Racecourse, Dhaka.
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SLIDE 2: INDEPENDENCE CELEBRATION -->
+
+            <div class="carousel-item">
+
+                <div class="text-white"
+                    style="
+                    background:linear-gradient(90deg,rgba(0,0,0,.90),rgba(0,0,0,.30)),
+                    url('https://commons.wikimedia.org/wiki/Special:FilePath/Bangladesh_Liberation_War_independence_celebration_Dohar_Dhaka_1971-12-16_%28PID-h0039%29.jpg') center/cover;
+                    min-height:600px;
+                    ">
+
+                    <div class="container">
+                        <div class="row align-items-center" style="min-height:600px">
+
+                            <div class="col-lg-8 py-5">
+
+                                <span class="badge bg-danger px-3 py-2 mb-4">
+                                    VICTORY DAY - 16 DECEMBER
+                                </span>
+
+                                <h1 class="display-2 fw-bold mb-4">
+                                    Celebrate Our
+                                    <span class="text-danger">Victory</span>
+                                </h1>
+
+                                <p class="lead text-white mb-4">
+                                    Discover the historic victory of Bangladesh
+                                    in 1971. Explore the memories, celebrations
+                                    and stories that shaped our independent nation.
+                                </p>
+
+                                <a href="./Gallry.html" class="btn btn-danger btn-lg px-4 me-2">
+                                    View Gallery
+                                    <i class="bi bi-images"></i>
+                                </a>
+
+                                <a href="#about" class="btn btn-outline-light btn-lg px-4">
+                                    Learn More
+                                </a>
+
+                                <p class="small text-white-50 mt-4">
+                                    Historical Moment: Bangladesh Victory Day,
+                                    16 December 1971.
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SLIDE 3: SURRENDER CEREMONY -->
+
+            <div class="carousel-item">
+
+                <div class="text-white"
+                    style="
+                    background:linear-gradient(90deg,rgba(0,0,0,.90),rgba(0,0,0,.30)),
+                    url('https://commons.wikimedia.org/wiki/Special:FilePath/Pakistan_Instrument_of_Surrender_signed_by_A_A_K_Niazi_and_Jagjit_Singh_Aurora_at_Ramna_Race_Course_Maidan_1971-12-16_%28PID-h0029%29.jpg') center/cover;
+                    min-height:600px;
+                    ">
+
+                    <div class="container">
+                        <div class="row align-items-center" style="min-height:600px">
+
+                            <div class="col-lg-8 py-5">
+
+                                <span class="badge bg-danger px-3 py-2 mb-4">
+                                    A HISTORIC MOMENT - 1971
+                                </span>
+
+                                <h1 class="display-2 fw-bold mb-4">
+                                    The Birth Of
+                                    <span class="text-danger">Bangladesh</span>
+                                </h1>
+
+                                <p class="lead text-white mb-4">
+                                    Explore the historic events of 16 December 1971.
+                                    Discover the documents, photographs and
+                                    historical records of Bangladesh's independence.
+                                </p>
+
+                                <a href="./document.html" class="btn btn-danger btn-lg px-4 me-2">
+                                    View Documents
+                                    <i class="bi bi-file-earmark-text"></i>
+                                </a>
+
+                                <a href="./interviews.html" class="btn btn-outline-light btn-lg px-4">
+                                    Explore Stories
+                                </a>
+
+                                <p class="small text-white-50 mt-4">
+                                    Historical Moment: Instrument of Surrender,
+                                    Dhaka, 16 December 1971.
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Previous Button -->
+
+        <button class="carousel-control-prev"
+            type="button"
+            data-bs-target="#historyCarousel"
+            data-bs-slide="prev">
+
+            <span class="carousel-control-prev-icon"
+                aria-hidden="true">
+            </span>
+
+            <span class="visually-hidden">Previous</span>
+
+        </button>
+
+
+        <!-- Next Button -->
+
+        <button class="carousel-control-next"
+            type="button"
+            data-bs-target="#historyCarousel"
+            data-bs-slide="next">
+
+            <span class="carousel-control-next-icon"
+                aria-hidden="true">
+            </span>
+
+            <span class="visually-hidden">Next</span>
+
+        </button>
+
+    </div>
+
 </section>
+
+<!-- ================= END HERO SLIDER ================= -->
+
 
 
 <!-- ABOUT -->
